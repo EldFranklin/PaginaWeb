@@ -1,0 +1,116 @@
+body {
+    font-family: monospace;
+    background-image: linear-gradient(260deg, rgb(76, 0, 255), rgba(68, 4, 128, 0.603));
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.faixaTitulo {
+    position: relative; 
+    text-align: center;
+    color: white; 
+    padding: 50px 20px; 
+    background-image: url(https://addee.com.br/wp-content/uploads/2020/01/original-fc6862d50171a26311d8e50b064407d8.jpg);
+    background-size: cover; 
+}
+
+.subtitulo {
+    padding: 10px;
+    background-color: rgb(47, 0, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.RegistroEvento {
+    text-align: center;
+    padding: 5px;
+    margin: 10%;
+    background-color: #3a92bb;
+    color: white;
+    border-radius: 15px;
+}
+
+.evento {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(65, 65, 161, 0.9);
+    border-radius: 10px;
+    margin: 20px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.image {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+}
+
+form {
+    margin: 10%;
+    background-color: rgba(42, 42, 119, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 450px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: black;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: rgb(76, 0, 255);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(76, 0, 255, 0.8);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    color: #3a92bb;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}

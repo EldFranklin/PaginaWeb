@@ -3,10 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Evento - Revoluções Tecnológicas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="faixaTitulo">
+        <h1>Evento - Grandes Revoluções Tecnológicas</h1>
+        <h2 class="subtitulo">Participe do evento que celebra as inovações que mudaram o mundo.</h2>
+    </header>
+
+    <main>
+        <section class="evento">
+            <h2>Transformando o Futuro com Tecnologia</h2>
+            <p>Junte-se a nós para um evento especial, explorando as inovações da <em>Apple</em> e outras Grandes Empresas que impactaram o mundo da tecnologia.</p>
+            <p>Para mais informações, <a href="https://www.apple.com" target="_blank">visite o site oficial da Apple</a>.</p>
+        </section>
+
+        <div class="container">
+            <img src="https://tveventos.tv.br/wp-content/uploads/2024/06/RICK-CHESTER-FARANI-STAGE-31.jpg" alt="O cara quase caindo de costas pro publico tentando tirar foto" class="image">
+            
+            <section>
+                <h2 class="RegistroEvento">Registro para o Evento</h2>
+                <form action="submit_form.html" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Informações Pessoais</legend>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required><br>
+        
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required><br>
+        
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}" required><br>
+        
+                        <label for="data_nascimento">Data de Nascimento:</label>
+                        <input type="date" id="data_nascimento" name="data_nascimento" required><br>
+        
+                        <fieldset>
+                            <legend>Gênero:</legend>
+                            <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+                            <label><input type="radio" name="genero" value="feminino"> Feminino</label>
+                            <label><input type="radio" name="genero" value="outro"> Outro</label>
+                        </fieldset>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Preferências</legend>
+                        <label>Interesses:</label><br>
+                        <label><input type="checkbox" name="interesses" value="tecnologia"> Tecnologia</label>
+                        <label><input type="checkbox" name="interesses" value="negocios"> Negócios</label>
+                        <label><input type="checkbox" name="interesses" value="design"> Design</label><br>
+        
+                        <label for="produto_favorito">Produto Apple Favorito:</label>
+                        <select id="produto_favorito" name="produto_favorito">
+                            <option value="iphone">iPhone</option>
+                            <option value="macbook">MacBook</option>
+                            <option value="ipad">iPad</option>
+                            <option value="apple_watch">Apple Watch</option>
+                        </select>
+                    </fieldset>
+        
+                    <label for="mensagem">Mensagem Opcional:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Escreva sua mensagem..."></textarea><br>
+        
+                    <label for="arquivo">Envie um arquivo:</label>
+                    <input type="file" id="arquivo" name="arquivo"><br>
+        
+                    <input type="submit" value="Registrar">
+                </form>
+            </section>
+        </div>
+
+        <section class="ProgramacaoEvento">
+            <h2>Programação do Evento</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Atividade</th>
+                        <th>Horário</th>
+                        <th>Palestrante</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>História da Apple e o impacto de suas inovações</td>
+                        <td>09:00 - 10:30</td>
+                        <td>John Doe</td>
+                    </tr>
+                    <tr>
+                        <td>O legado de Steve Jobs na tecnologia</td>
+                        <td>11:00 - 12:30</td>
+                        <td>Jane Smith</td>
+                    </tr>
+                    <tr>
+                        <td>Novidades e tendências que impactaram na década passada</td>
+                        <td>14:00 - 15:30</td>
+                        <td>Emily Johnson</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="multimidia">
+            <h2>Conteúdo Multimídia</h2>
+            <h3>Steve Jobs Apresenta a Revolução Digital</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/taTmpYQ_3jk" title="Steve Jobs - Apresentação" allowfullscreen></iframe>
+            <h3>Podcast: Computadores Quânticos</h3>
+            <audio controls>
+                <source src="https://www.youtube.com/watch?v=92eSz2X0AlU" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <h3>Destaques do Evento</h3>
+            <img src="produto_apple.jpg" alt="Produto Apple" width="600">
+        </section>
+
+        <section>
+            <h3>Brochura do Evento falta fazer</h3>
+            <object data="brochura_evento_apple.pdf" type="application/pdf" width="600" height="400">
+                <p>Seu navegador não suporta a exibição de PDF. <a href="brochura_evento_apple.pdf">Baixe o PDF</a>.</p>
+            </object>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Evento - Revoluções Tecnológicas. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
