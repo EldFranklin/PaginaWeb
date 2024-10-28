@@ -40,7 +40,7 @@ main {
 
 }
 
-.evento, .container, .ProgramacaoEvento, .multimidia {
+.evento, .container, .programacao, .multimidia {
     margin-bottom: 30px;
     text-align: center;
     padding: 10px;
@@ -56,6 +56,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 10px 0;
+    color: #000913;
 }
 
 th, td {
@@ -80,6 +81,10 @@ fieldset {
 legend {
     font-weight: bold;
     color: var(--cor-primaria);
+}
+tfoot{
+    color: white;
+    background: var(--cor-primaria);
 }
 
 input[type="text"],
@@ -117,6 +122,10 @@ input[type="submit"]:hover {
 
 .multimidia iframe {
     width: 100%;
+    text-align: center;
+}
+
+.brochura{
     text-align: center;
 }
 
